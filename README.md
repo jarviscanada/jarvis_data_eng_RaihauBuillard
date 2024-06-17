@@ -4,7 +4,7 @@ As a software developer, graduated in software engineering and holding a Diploma
 
 ## Skills
 
-**Proficient:** C#, Java, Git, MSSQL, Agile/Scrum
+**Proficient:** C#, Java, Git, REST Api, Agile/Scrum
 
 **Competent:** React, Linux/Bash, HTML/CSS, MSSQL, Docker
 
