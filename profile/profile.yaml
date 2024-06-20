@@ -40,14 +40,17 @@ skills:
 jarvis_projects:
   - name: "Cluster Monitor"
     git_url: "/linux_sql"
-    # The project description allows hiring managers to understand your project and technologies you used(e.g. programming languages, libraries, algorithms, hardware, tools, etc.).
-    # The project description must start with an action verb (https://bit.ly/3guO98u)
     description: "Implemented data collection scripts using Bash to execute Linux commands, automating hardware and resource data retrieval.
     Configured PostgreSQL database within a Docker container to store collected data centrally.
     Created and managed Docker containers to ensure consistent and isolated database environments.
     Integrated the system with Git for version control and collaboration.
     Integrated Crontab scheduling for automated data collection (host_usage.sh), ensuring continuous updates of CPU and memory usage metrics.
     Deployed the Linux Cluster Monitoring Project, automating real-time hardware resource monitoring."
+  - name: "RDBMS and SQL"
+    git_url: "/sql"
+    description: "Developed expertise in normalization, data modeling, entity relationships, and fundamental database principles.
+    Executed various SQL queries to enhance skills in data manipulation and retrieval.
+    Acquired SQL skills and a deep understanding of both theoretical concepts and practical applications in database management."
 
 # List of personal or academic projects
 # Feel free to add more projects
@@ -84,7 +87,10 @@ professional_experience:
     company: "Jarvis"
     duration: "2024-present"
     # The project description must start with an action verb (https://bit.ly/3guO98u)
-    description: "Implemented a Linux cluster monitoring system to collect and analyze hardware specifications and resource usage for each machine in the cluster."
+    description: "Implemented a Linux cluster monitoring system to collect and analyze hardware specifications 
+    and resource usage for each machine in the cluster.
+    Developed SQL skills through a comprehensive training project, mastering clauses, 
+    database management principles, and data manipulation techniques"
   - title: "Software Developer"
     company: "Genetec"
     duration: "May 2023 - August 2023"

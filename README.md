@@ -17,6 +17,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_RaihauBuil
 
 **Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_RaihauBuillard/tree/master/linux_sql)]: Implemented data collection scripts using Bash to execute Linux commands, automating hardware and resource data retrieval. Configured PostgreSQL database within a Docker container to store collected data centrally. Created and managed Docker containers to ensure consistent and isolated database environments. Integrated the system with Git for version control and collaboration. Integrated Crontab scheduling for automated data collection (host_usage.sh), ensuring continuous updates of CPU and memory usage metrics. Deployed the Linux Cluster Monitoring Project, automating real-time hardware resource monitoring.
 
+**RDBMS and SQL** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_RaihauBuillard/tree/master/sql)]: Developed expertise in normalization, data modeling, entity relationships, and fundamental database principles. Executed various SQL queries to enhance skills in data manipulation and retrieval. Acquired SQL skills and a deep understanding of both theoretical concepts and practical applications in database management.
+
 
 ## Highlighted Projects
 **Web application for Ski Acro Québec**: Evaluated client needs and defined tasks for a given period. Distributed tasks within the team and orchestrated daily meetings to monitor progress during iterations. Conceptualized the collected data to establish a foundational system that aligns with client needs (class diagram, sequence diagram, deployment diagram). Implemented microservices in a .NET environment to design a flexible platform. Designed an API to process all essential requests for platform operation. Managed data efficiently with Entity Framework within SQLite as well as MSSQL.
@@ -26,7 +28,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_RaihauBuil
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2024-present)**: Implemented a Linux cluster monitoring system to collect and analyze hardware specifications and resource usage for each machine in the cluster.
+**Software Developer, Jarvis (2024-present)**: Implemented a Linux cluster monitoring system to collect and analyze hardware specifications and resource usage for each machine in the cluster. Developed SQL skills through a comprehensive training project, mastering clauses, database management principles, and data manipulation techniques
 
 **Software Developer, Genetec (May 2023 - August 2023)**: Shared ideas regarding the addition of features and analyzing the consequent needs during meetings. Reviewed unit and integration tests to comply with test coverage as per conventions. Optimized Security Center (Genetec product) by adding new functionalities. Used Azure DevOps to track tasks and manage project workflows. Guaranteed the proper operation of the product by resolving bugs of various complexities. Collaborated in Pair programming during innovation days to make improvements to the Genetec product.
 
