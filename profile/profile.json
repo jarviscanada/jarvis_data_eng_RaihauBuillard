@@ -33,6 +33,11 @@
       "description": "Implemented data collection scripts using Bash to execute Linux commands, automating hardware and resource data retrieval. Configured PostgreSQL database within a Docker container to store collected data centrally. Created and managed Docker containers to ensure consistent and isolated database environments. Integrated the system with Git for version control and collaboration. Integrated Crontab scheduling for automated data collection (host_usage.sh), ensuring continuous updates of CPU and memory usage metrics. Deployed the Linux Cluster Monitoring Project, automating real-time hardware resource monitoring.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
+    },
+    {
+      "description": "Developed expertise in normalization, data modeling, entity relationships, and fundamental database principles. Executed various SQL queries to enhance skills in data manipulation and retrieval. Acquired SQL skills and a deep understanding of both theoretical concepts and practical applications in database management.",
+      "git_url": "/sql",
+      "name": "RDBMS and SQL"
     }
   ],
   "name": "Raihau Buillard-Richmond",
@@ -59,7 +64,7 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Implemented a Linux cluster monitoring system to collect and analyze hardware specifications and resource usage for each machine in the cluster.",
+      "description": "Implemented a Linux cluster monitoring system to collect and analyze hardware specifications and resource usage for each machine in the cluster. Developed SQL skills through a comprehensive training project, mastering clauses, database management principles, and data manipulation techniques",
       "duration": "2024-present",
       "title": "Software Developer"
     },
