@@ -1,16 +1,18 @@
 package ca.jrvs.apps.grep;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
+import java.util.stream.Stream;
 
 public interface JavaGrep {
 
     void process() throws IOException;
 
-    List<File> listFiles(String rootDir);
+    Stream<File> listFiles(String rootDir);
 
-    List<String> readLines(File inputFiles);
+    Stream<String> readLines(File inputFiles) throws IOException;
 
     boolean containsPattern(String line);
 
