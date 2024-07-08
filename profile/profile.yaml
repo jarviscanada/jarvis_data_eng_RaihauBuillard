@@ -28,6 +28,7 @@ skills:
     - HTML/CSS
     - MSSQL
     - Docker
+    - Postman/Insomnia/Swagger
   # At least 5 skills
   familiar:
     - AWS/GCP
@@ -35,6 +36,8 @@ skills:
     - TypeScript
     - RDBMS/SQL
     - Javascript
+    - GraphQL
+    - Terraform
 
 # List of Jarvis projects
 jarvis_projects:
@@ -51,6 +54,12 @@ jarvis_projects:
     description: "Developed expertise in normalization, data modeling, entity relationships, and fundamental database principles.
     Executed various SQL queries to enhance skills in data manipulation and retrieval.
     Acquired SQL skills and a deep understanding of both theoretical concepts and practical applications in database management."
+  - name: "Java Grep Application"
+    git_url: "/core_java/grep"
+    description: "Designed a Java application to replicate the functionality of the egrep command, enabling text filtering in .txt files based on regex patterns.
+      Implemented Docker compatibility for seamless deployment and scalability of the application..
+      Addressed performance challenges by adopting streaming APIs for incremental file processing, ensuring optimal memory utilization.
+      Developed grep app integrating Maven for dependency management and incorporated Java streams and lambdas for efficient data processing."
 
 # List of personal or academic projects
 # Feel free to add more projects
@@ -90,7 +99,8 @@ professional_experience:
     description: "Implemented a Linux cluster monitoring system to collect and analyze hardware specifications 
     and resource usage for each machine in the cluster.
     Developed SQL skills through a comprehensive training project, mastering clauses, 
-    database management principles, and data manipulation techniques"
+    database management principles, and data manipulation techniques.
+    Designed a Java-based grep application integrating Maven, Docker, and streaming APIs for efficient text filtering and deployment."
   - title: "Software Developer"
     company: "Genetec"
     duration: "May 2023 - August 2023"

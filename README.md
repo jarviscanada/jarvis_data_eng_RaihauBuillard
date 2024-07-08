@@ -6,9 +6,9 @@ As a software developer, graduated in software engineering and holding a Diploma
 
 **Proficient:** C#, Java, Git, REST Api, Agile/Scrum
 
-**Competent:** React, Linux/Bash, HTML/CSS, MSSQL, Docker
+**Competent:** React, Linux/Bash, HTML/CSS, MSSQL, Docker, Postman/Insomnia/Swagger
 
-**Familiar:** AWS/GCP, Python, TypeScript, RDBMS/SQL, Javascript
+**Familiar:** AWS/GCP, Python, TypeScript, RDBMS/SQL, Javascript, GraphQL, Terraform
 
 ## Jarvis Projects
 
@@ -19,6 +19,8 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_RaihauBuil
 
 **RDBMS and SQL** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_RaihauBuillard/tree/master/sql)]: Developed expertise in normalization, data modeling, entity relationships, and fundamental database principles. Executed various SQL queries to enhance skills in data manipulation and retrieval. Acquired SQL skills and a deep understanding of both theoretical concepts and practical applications in database management.
 
+**Java Grep Application** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_RaihauBuillard/tree/master/core_java/grep)]: Designed a Java application to replicate the functionality of the egrep command, enabling text filtering in .txt files based on regex patterns. Implemented Docker compatibility for seamless deployment and scalability of the application.. Addressed performance challenges by adopting streaming APIs for incremental file processing, ensuring optimal memory utilization. Developed grep app integrating Maven for dependency management and incorporated Java streams and lambdas for efficient data processing.
+
 
 ## Highlighted Projects
 **Web application for Ski Acro Québec**: Evaluated client needs and defined tasks for a given period. Distributed tasks within the team and orchestrated daily meetings to monitor progress during iterations. Conceptualized the collected data to establish a foundational system that aligns with client needs (class diagram, sequence diagram, deployment diagram). Implemented microservices in a .NET environment to design a flexible platform. Designed an API to process all essential requests for platform operation. Managed data efficiently with Entity Framework within SQLite as well as MSSQL.
@@ -28,7 +30,7 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_RaihauBuil
 
 ## Professional Experiences
 
-**Software Developer, Jarvis (2024-present)**: Implemented a Linux cluster monitoring system to collect and analyze hardware specifications and resource usage for each machine in the cluster. Developed SQL skills through a comprehensive training project, mastering clauses, database management principles, and data manipulation techniques
+**Software Developer, Jarvis (2024-present)**: Implemented a Linux cluster monitoring system to collect and analyze hardware specifications and resource usage for each machine in the cluster. Developed SQL skills through a comprehensive training project, mastering clauses, database management principles, and data manipulation techniques. Designed a Java-based grep application integrating Maven, Docker, and streaming APIs for efficient text filtering and deployment.
 
 **Software Developer, Genetec (May 2023 - August 2023)**: Shared ideas regarding the addition of features and analyzing the consequent needs during meetings. Reviewed unit and integration tests to comply with test coverage as per conventions. Optimized Security Center (Genetec product) by adding new functionalities. Used Azure DevOps to track tasks and manage project workflows. Guaranteed the proper operation of the product by resolving bugs of various complexities. Collaborated in Pair programming during innovation days to make improvements to the Genetec product.
 
