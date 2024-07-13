@@ -13,7 +13,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.NoSuchElementException;
 import java.util.Optional;
 
 public class QuoteDAO implements CrudDao<Quote, String> {
@@ -42,7 +41,7 @@ public class QuoteDAO implements CrudDao<Quote, String> {
     }
 
     @Override
-    public Quote save(Quote entity) throws EntityAlreadyExistsException {
+    public Quote save(Quote entity){
         String ticker = entity.getTicker();
         if(exists(ticker)){
             throw new EntityAlreadyExistsException("Quote with ID "+ticker+" already exists");
@@ -68,10 +67,6 @@ public class QuoteDAO implements CrudDao<Quote, String> {
             String errorMessage = "Can't execute save method due to this error : "+sqlException.getMessage();
             logger.error(errorMessage, sqlException);
             throw new RuntimeException(errorMessage, sqlException);
-        }catch(NoSuchElementException e){
-            String errorMessage = "Failed to save quote entity.";
-            logger.error(errorMessage, e);
-            throw new RuntimeException(errorMessage, e);
         }
     }
 

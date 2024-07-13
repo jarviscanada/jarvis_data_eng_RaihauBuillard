@@ -144,4 +144,24 @@ public class Quote {
     public void setTimestamp(Timestamp timestamp) {
         this.timestamp = timestamp;
     }
+
+    @Override
+    public boolean equals(Object obj){
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof Quote)) {
+            return false;
+        }
+        Quote other = (Quote) obj;
+        return this.ticker.equals(other.ticker) &&
+                this.open == other.open &&
+                this.high == other.high &&
+                this.low == other.low &&
+                this.price == other.price &&
+                this.volume == other.volume &&
+                this.previousClose == other.previousClose &&
+                this.change == other.change &&
+                this.changePercent.equals(other.changePercent);
+    }
 }

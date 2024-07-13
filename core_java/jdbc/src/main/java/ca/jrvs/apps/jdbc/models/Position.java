@@ -38,4 +38,18 @@ public class Position {
     public void setValuePaid(double valuePaid) {
         this.valuePaid = valuePaid;
     }
+
+    @Override
+    public boolean equals(Object obj){
+        if (obj == this) {
+            return true;
+        }
+        if (!(obj instanceof Position)) {
+            return false;
+        }
+        Position other = (Position) obj;
+        return this.ticker.equals(other.ticker) &&
+                this.numOfShares == other.numOfShares &&
+                this.valuePaid == other.valuePaid;
+    }
 }

@@ -45,7 +45,6 @@ public class QuoteHttpHelper {
     private Quote getQuote(Request request) throws IOException {
         Response response = client.newCall(request).execute();
         String jsonValue = response.body().string();
-        logger.debug(jsonValue);
         Quote quote = JsonParser.toSpecificObjectFromJson(jsonValue, QuoteConstants.GLOBAL_QUOTE_API_FIELD, Quote.class);
         quote.setTimestamp(Timestamp.from(Instant.now()));
         return quote;

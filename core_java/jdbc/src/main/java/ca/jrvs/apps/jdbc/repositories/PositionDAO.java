@@ -33,7 +33,7 @@ public class PositionDAO implements CrudDao<Position, String> {
     }
 
     @Override
-    public Position save(Position entity) throws EntityAlreadyExistsException {
+    public Position save(Position entity){
         String ticker = entity.getTicker();
         if(exists(ticker)){
             throw new EntityAlreadyExistsException("Position with ID "+ticker+" already exists");
