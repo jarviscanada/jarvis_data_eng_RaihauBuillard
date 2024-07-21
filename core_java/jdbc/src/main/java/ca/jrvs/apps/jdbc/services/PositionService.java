@@ -6,6 +6,7 @@ import ca.jrvs.apps.jdbc.models.Position;
 import ca.jrvs.apps.jdbc.models.Quote;
 import ca.jrvs.apps.jdbc.repositories.PositionDAO;
 
+import java.util.List;
 import java.util.Optional;
 
 public class PositionService {
@@ -37,6 +38,10 @@ public class PositionService {
         }
 
         positionDAO.deleteById(ticker);
+    }
+
+    public List<Position> getPositions(){
+        return (List<Position>) positionDAO.findAll();
     }
 
     private boolean isThereAnyProfit(Quote quote, Position position) {

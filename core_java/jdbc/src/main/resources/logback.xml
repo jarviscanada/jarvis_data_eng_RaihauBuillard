@@ -1,0 +1,36 @@
+<configuration debug="true">
+
+    <!-- File Appender for general flow logs -->
+    <appender name="FILE_FLOW" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/application-flow.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/application-flow.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- File Appender for error logs -->
+    <appender name="FILE_ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/errors.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/errors.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Logger for general flow -->
+    <logger name="general_flow_logs" level="INFO" additivity="false">
+        <appender-ref ref="FILE_FLOW" />
+    </logger>
+
+    <!-- Root logger for error logs -->
+    <root name="error_logs" level="ERROR">
+        <appender-ref ref="FILE_ERROR" />
+    </root>
+</configuration>

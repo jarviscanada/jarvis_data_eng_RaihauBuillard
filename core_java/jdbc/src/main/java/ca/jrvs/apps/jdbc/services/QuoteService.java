@@ -40,7 +40,7 @@ public class QuoteService {
 
     public boolean isQuoteUpToDate(Quote quote) {
         LocalDate currentDate = LocalDate.now();
-        LocalDate latestTradingDay = quote.getLatestTradingDay().toLocalDate();
+        LocalDate latestTradingDay = quote.getTimestamp().toLocalDateTime().toLocalDate();
         return currentDate.equals(latestTradingDay);
     }
 

@@ -30,6 +30,9 @@ public class QuoteHttpHelper {
             return getQuote(request);
         } catch (IOException e) {
             throw new RuntimeException(e);
+        } catch (NullPointerException e){
+            logger.error("The api key is not setup");
+            throw new RuntimeException(e);
         }
     }
 

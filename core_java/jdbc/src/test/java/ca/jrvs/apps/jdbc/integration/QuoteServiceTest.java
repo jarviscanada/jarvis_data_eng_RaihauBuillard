@@ -77,8 +77,9 @@ public class QuoteServiceTest {
 
     @Test
     void getLatestQuote_shouldFetchAndReturnQuoteFromAPI_whenQuoteIsNotUpToDate() {
+        Date fakeDate = new Date(System.currentTimeMillis() - 1000 * 60 * 60 * 24);
         Quote oldQuote = new Quote(ticker, 151.6500, 153.4200, 151.0200, 152.0600, 9425575,
-                new Date(System.currentTimeMillis() - 1000 * 60 * 60 * 24), 151.7000, 0.36000, "0.2373%", Timestamp.from(Instant.now()));
+                fakeDate, 151.7000, 0.36000, "0.2373%", new Timestamp(fakeDate.getTime()));
         quoteDAO.save(oldQuote);
 
         Quote result = quoteService.getLatestQuote(ticker);

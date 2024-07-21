@@ -1,7 +1,12 @@
+-- Drop and create the stock_quote database
 DROP DATABASE IF EXISTS stock_quote;
 CREATE DATABASE stock_quote;
 
-DROP TABLE IF EXISTS quote;
+-- Connect to the new stock_quote database
+\c stock_quote
+
+-- Drop and create the quote table
+DROP TABLE IF EXISTS quote CASCADE;
 CREATE TABLE quote (
     symbol              VARCHAR(10) PRIMARY KEY,
     open                DECIMAL(10, 2) NOT NULL,
@@ -16,7 +21,7 @@ CREATE TABLE quote (
     timestamp           TIMESTAMP DEFAULT CURRENT_TIMESTAMP  NOT NULL
 );
 
-
+-- Drop and create the position table
 DROP TABLE IF EXISTS position;
 CREATE TABLE position (
     symbol                VARCHAR(10) PRIMARY KEY,
@@ -24,3 +29,4 @@ CREATE TABLE position (
     value_paid            DECIMAL(10, 2) NOT NULL,
     CONSTRAINT symbol_fk	FOREIGN KEY (symbol) REFERENCES quote(symbol)
 );
+

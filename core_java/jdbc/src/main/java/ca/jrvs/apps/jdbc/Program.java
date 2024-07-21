@@ -21,8 +21,9 @@ import java.util.Properties;
 public class Program {
 
     private static final Logger logger = LoggerFactory.getLogger(Program.class);
-    private static final String PROPERTIES_FILE = "src/resources/properties.txt";
+    private static final String PROPERTIES_FILE = "src/main/resources/app.properties";
     private static final String SECRET_API_FIELD = "SECRET_API_KEY";
+    private static final String SERVER_FIELD = "SERVER";
 
     public static void main(String[] args) {
         BasicConfigurator.configure();
@@ -34,6 +35,7 @@ public class Program {
             StockQuoteController stockQuoteController = initProgram(connection);
             stockQuoteController.initClient();
         } catch (SQLException e) {
+            logger.error("Failed to connect to database : "+e.getMessage(), e);
             throw new RuntimeException(e);
         }
     }
@@ -42,12 +44,12 @@ public class Program {
     private static String getUrl(Properties properties) {
         try(FileInputStream file = new FileInputStream(PROPERTIES_FILE)){
             properties.load(file);
-            String host = properties.getProperty("server");
+            String server = System.getenv(SERVER_FIELD);
             String databaseName = properties.getProperty("database");
             String port = properties.getProperty("port");
-            return "jdbc:postgresql://"+host+":"+port+"/"+databaseName;
+            return "jdbc:postgresql://"+server+":"+port+"/"+databaseName;
         }catch(IOException ioException){
-            logger.error("Failed to read properties.txt file : "+ioException.getMessage(), ioException);
+            logger.error("Failed to read app.properties file : "+ioException.getMessage(), ioException);
             throw new RuntimeException(ioException.getMessage(), ioException);
         }
     }
