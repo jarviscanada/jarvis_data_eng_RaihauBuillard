@@ -60,6 +60,15 @@ jarvis_projects:
       Implemented Docker compatibility for seamless deployment and scalability of the application..
       Addressed performance challenges by adopting streaming APIs for incremental file processing, ensuring optimal memory utilization.
       Developed grep app integrating Maven for dependency management and incorporated Java streams and lambdas for efficient data processing."
+  - name: "Java Stock Quote Application"
+    git_url: "/core_java/jdbc"
+    description: "Developed a console application to manage stock transactions, allowing users to buy and sell stocks and view real-time quote details.
+    Integrated the Alpha Vantage API to fetch and display the latest stock quotes.
+    Utilized PostgreSQL to persist stock transactions and maintain a history of bought stocks.
+    Implemented database operations using JDBC for data retrieval and manipulation.
+    Provided two approaches to deploy the application using a Dockerfile and a Docker Compose file for seamless deployment and scalability.
+    Created unit and integration tests to ensure the reliability and accuracy of the application's functionality.
+    Configured Docker to run PostgreSQL in a container and linked it with the application for persistent data storage."
 
 # List of personal or academic projects
 # Feel free to add more projects
@@ -100,7 +109,8 @@ professional_experience:
     and resource usage for each machine in the cluster.
     Developed SQL skills through a comprehensive training project, mastering clauses, 
     database management principles, and data manipulation techniques.
-    Designed a Java-based grep application integrating Maven, Docker, and streaming APIs for efficient text filtering and deployment."
+    Designed a Java-based grep application integrating Maven, Docker, and streaming APIs for efficient text filtering and deployment.
+    Delivered a full-featured Java stock quote application, integrating API data retrieval and database management, and deployed using Docker for streamlined operations."
   - title: "Software Developer"
     company: "Genetec"
     duration: "May 2023 - August 2023"
