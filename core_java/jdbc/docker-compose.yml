@@ -1,0 +1,33 @@
+services:
+  database:
+    image: postgres:9.6-alpine
+    container_name: stock-psql
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: passwrd
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./sql/stock_quote.sql:/docker-entrypoint-initdb.d/stock_quote.sql
+      - stock_data:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready -U postgres" ]
+      interval: 5s
+      retries: 5
+
+  app:
+    build: .
+    container_name: stock-app
+    environment:
+      - SERVER=database
+      - SECRET_API_KEY=${SECRET_API_KEY}
+    depends_on:
+      database:
+        condition: service_healthy
+    stdin_open: true
+    tty: true
+
+volumes:
+  stock_data:
+  sql:

@@ -43,6 +43,11 @@
       "description": "Designed a Java application to replicate the functionality of the egrep command, enabling text filtering in .txt files based on regex patterns. Implemented Docker compatibility for seamless deployment and scalability of the application.. Addressed performance challenges by adopting streaming APIs for incremental file processing, ensuring optimal memory utilization. Developed grep app integrating Maven for dependency management and incorporated Java streams and lambdas for efficient data processing.",
       "git_url": "/core_java/grep",
       "name": "Java Grep Application"
+    },
+    {
+      "description": "Developed a console application to manage stock transactions, allowing users to buy and sell stocks and view real-time quote details. Integrated the Alpha Vantage API to fetch and display the latest stock quotes. Utilized PostgreSQL to persist stock transactions and maintain a history of bought stocks. Implemented database operations using JDBC for data retrieval and manipulation. Provided two approaches to deploy the application using a Dockerfile and a Docker Compose file for seamless deployment and scalability. Created unit and integration tests to ensure the reliability and accuracy of the application's functionality. Configured Docker to run PostgreSQL in a container and linked it with the application for persistent data storage.",
+      "git_url": "/core_java/jdbc",
+      "name": "Java Stock Quote Application"
     }
   ],
   "name": "Raihau Buillard-Richmond",
@@ -69,7 +74,7 @@
   "professional_experience": [
     {
       "company": "Jarvis",
-      "description": "Implemented a Linux cluster monitoring system to collect and analyze hardware specifications and resource usage for each machine in the cluster. Developed SQL skills through a comprehensive training project, mastering clauses, database management principles, and data manipulation techniques. Designed a Java-based grep application integrating Maven, Docker, and streaming APIs for efficient text filtering and deployment.",
+      "description": "Implemented a Linux cluster monitoring system to collect and analyze hardware specifications and resource usage for each machine in the cluster. Developed SQL skills through a comprehensive training project, mastering clauses, database management principles, and data manipulation techniques. Designed a Java-based grep application integrating Maven, Docker, and streaming APIs for efficient text filtering and deployment. Delivered a full-featured Java stock quote application, integrating API data retrieval and database management, and deployed using Docker for streamlined operations.",
       "duration": "2024-present",
       "title": "Software Developer"
     },
