@@ -52,6 +52,6 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_RaihauBuil
 
 
 ## Miscellaneous
-- N/A
-- N/A
-- N/A
+- Muay Thai : Respect for others, improving self-control, maintaining good physical and mental health.
+- Climbing : Developing problem-solving skills, setting achievable and attainable goals.
+- Hiking: Enhancing physical fitness, enjoying nature, developing perseverance and endurance.
